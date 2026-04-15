@@ -139,6 +139,7 @@
             this.btFinalizar.TabIndex = 5;
             this.btFinalizar.Text = "Finalizar";
             this.btFinalizar.UseVisualStyleBackColor = true;
+            this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
             // FormNovaVenda
             // 

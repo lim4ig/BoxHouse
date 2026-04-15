@@ -18,9 +18,9 @@ namespace BoxHouse
 
             List<Produto> listaProdutos = new List<Produto>
             {
-                new Produto("Camiseta", 29.99m),
-                new Produto("Calça Jeans", 79.99m),
-                new Produto("Tênis", 149.99m)
+                new Produto("Mordedor", 29.99m),
+                new Produto("Ração", 79.99m),
+                new Produto("Coleira", 149.99m)
             };
 
             cbProdutos.DataSource = listaProdutos;
@@ -44,6 +44,21 @@ namespace BoxHouse
 
             dgvItemAdd.Rows.Add(nome, preco, quantidade, (preco * quantidade));
 
+            
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btFinalizar_Click(object sender, EventArgs e)
+        {
+            decimal valor_total = 0;
+            valor_total = dgvItemAdd.Rows.Cast<DataGridViewRow>()
+                .Sum(row => Convert.ToDecimal(row.Cells["Total"].Value));
+
+            MessageBox.Show($"Valor total da venda: R$ {valor_total:F2}", "Venda Finalizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
