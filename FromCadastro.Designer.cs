@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btCadatrar = new System.Windows.Forms.Button();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.btLimparTabela = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,7 +65,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btLimpar);
             this.groupBox1.Controls.Add(this.txtNomePet);
+            this.groupBox1.Controls.Add(this.btCadatrar);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.mtbTelefone);
             this.groupBox1.Controls.Add(this.txtNome);
@@ -78,7 +82,7 @@
             // 
             // txtNomePet
             // 
-            this.txtNomePet.Location = new System.Drawing.Point(93, 84);
+            this.txtNomePet.Location = new System.Drawing.Point(93, 76);
             this.txtNomePet.Name = "txtNomePet";
             this.txtNomePet.Size = new System.Drawing.Size(232, 20);
             this.txtNomePet.TabIndex = 9;
@@ -87,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 89);
+            this.label3.Location = new System.Drawing.Point(6, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 15);
             this.label3.TabIndex = 8;
@@ -95,7 +99,7 @@
             // 
             // mtbTelefone
             // 
-            this.mtbTelefone.Location = new System.Drawing.Point(93, 55);
+            this.mtbTelefone.Location = new System.Drawing.Point(93, 47);
             this.mtbTelefone.Mask = "(99) 00000-0000";
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(89, 20);
@@ -103,7 +107,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(93, 28);
+            this.txtNome.Location = new System.Drawing.Point(93, 20);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(232, 20);
             this.txtNome.TabIndex = 6;
@@ -112,7 +116,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 60);
+            this.label2.Location = new System.Drawing.Point(6, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 4;
@@ -122,7 +126,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Location = new System.Drawing.Point(6, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 15);
             this.label1.TabIndex = 3;
@@ -130,7 +134,7 @@
             // 
             // btCadatrar
             // 
-            this.btCadatrar.Location = new System.Drawing.Point(351, 373);
+            this.btCadatrar.Location = new System.Drawing.Point(331, 105);
             this.btCadatrar.Name = "btCadatrar";
             this.btCadatrar.Size = new System.Drawing.Size(69, 23);
             this.btCadatrar.TabIndex = 5;
@@ -138,14 +142,34 @@
             this.btCadatrar.UseVisualStyleBackColor = true;
             this.btCadatrar.Click += new System.EventHandler(this.btCadatrar_Click);
             // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(256, 105);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(69, 23);
+            this.btLimpar.TabIndex = 11;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
+            // 
+            // btLimparTabela
+            // 
+            this.btLimparTabela.Location = new System.Drawing.Point(351, 373);
+            this.btLimparTabela.Name = "btLimparTabela";
+            this.btLimparTabela.Size = new System.Drawing.Size(69, 23);
+            this.btLimparTabela.TabIndex = 12;
+            this.btLimparTabela.Text = "Limpar";
+            this.btLimparTabela.UseVisualStyleBackColor = true;
+            this.btLimparTabela.Click += new System.EventHandler(this.btLimparTabela_Click);
+            // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 404);
+            this.Controls.Add(this.btLimparTabela);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btCadatrar);
             this.Name = "FormCadastro";
             this.Text = "Cadastro";
             this.groupBox2.ResumeLayout(false);
@@ -167,5 +191,7 @@
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
         private System.Windows.Forms.TextBox txtNomePet;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btLimpar;
+        private System.Windows.Forms.Button btLimparTabela;
     }
 }

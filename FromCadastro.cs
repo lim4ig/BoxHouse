@@ -29,9 +29,30 @@ namespace BoxHouse
 
             dgvInfo.Rows.Add(nome, telefone, nomePet);
 
-            btCadatrar.Enabled = false;
+        }
+
+        private void fnLimparFormularios()
+        {
+            txtNome.Clear();
+            mtbTelefone.Clear();
+            txtNomePet.Clear();
+ 
+        }
+
+        private void fnLimparTabelaCadatro()
+        {
+            dgvInfo.Rows.Clear();
 
         }
 
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            fnLimparFormularios();
+        }
+
+        private void btLimparTabela_Click(object sender, EventArgs e)
+        {
+            fnLimparTabelaCadatro();
+        }
     }
 }
