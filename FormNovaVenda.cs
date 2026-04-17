@@ -52,13 +52,30 @@ namespace BoxHouse
 
         }
 
+        private void fnLimparFormularios()
+        {
+            dgvItemAdd.Rows.Clear();
+        }
+
         private void btFinalizar_Click(object sender, EventArgs e)
         {
             decimal valor_total = 0;
             valor_total = dgvItemAdd.Rows.Cast<DataGridViewRow>()
                 .Sum(row => Convert.ToDecimal(row.Cells["Total"].Value));
 
-            MessageBox.Show($"Valor total da venda: R$ {valor_total:F2}", "Venda Finalizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            fnLimparFormularios();
+
+        }
+
+        private void FormNovaVenda_Load(object sender, EventArgs e)
+        {
+            lbValorTotal.Text = "Valor Total: " + dgvItemAdd.Rows.Cast<DataGridViewRow>()
+                .Sum(row => Convert.ToDecimal(row.Cells["Total"].Value)).ToString("C2");
+        }
+
+        private void ndQuantidade_ValueChanged(object sender, EventArgs e)
+        {
+            ndQuantidade.Minimum = 1;
         }
     }
 }

@@ -58,6 +58,12 @@
             this.ndQuantidade.Name = "ndQuantidade";
             this.ndQuantidade.Size = new System.Drawing.Size(179, 20);
             this.ndQuantidade.TabIndex = 1;
+            this.ndQuantidade.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ndQuantidade.ValueChanged += new System.EventHandler(this.ndQuantidade_ValueChanged);
             // 
             // btAdicionar
             // 
@@ -83,9 +89,9 @@
             this.lbValorTotal.Font = new System.Drawing.Font("News706 BT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbValorTotal.Location = new System.Drawing.Point(18, 399);
             this.lbValorTotal.Name = "lbValorTotal";
-            this.lbValorTotal.Size = new System.Drawing.Size(227, 29);
+            this.lbValorTotal.Size = new System.Drawing.Size(150, 29);
             this.lbValorTotal.TabIndex = 4;
-            this.lbValorTotal.Text = "Valor total: R$0,00";
+            this.lbValorTotal.Text = "Valor total: ";
             // 
             // groupBox1
             // 
@@ -152,6 +158,7 @@
             this.Controls.Add(this.lbValorTotal);
             this.Name = "FormNovaVenda";
             this.Text = "FormNovaVenda";
+            this.Load += new System.EventHandler(this.FormNovaVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ndQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemAdd)).EndInit();
             this.groupBox1.ResumeLayout(false);
