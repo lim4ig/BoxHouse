@@ -8,3 +8,4 @@ C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\bin\Debug\BoxHouse.exe
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\bin\Debug\BoxHouse.pdb
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.exe
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.pdb
+C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.FromCadastro.resources

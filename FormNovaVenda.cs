@@ -63,19 +63,29 @@ namespace BoxHouse
             valor_total = dgvItemAdd.Rows.Cast<DataGridViewRow>()
                 .Sum(row => Convert.ToDecimal(row.Cells["Total"].Value));
 
+            // Mostrar o valor total no label
+            lbValorTotal.Text = $"Valor total: {valor_total:C}";    
+
             fnLimparFormularios();
 
         }
 
         private void FormNovaVenda_Load(object sender, EventArgs e)
         {
-            lbValorTotal.Text = "Valor Total: " + dgvItemAdd.Rows.Cast<DataGridViewRow>()
-                .Sum(row => Convert.ToDecimal(row.Cells["Total"].Value)).ToString("C2");
+            // Inicializa o label com zero ao carregar o formulário
+            lbValorTotal.Text = "Valor total: " + 0m.ToString("C");
         }
 
         private void ndQuantidade_ValueChanged(object sender, EventArgs e)
         {
             ndQuantidade.Minimum = 1;
+        }
+
+        private void btCadatro_Click(object sender, EventArgs e)
+        {
+            FormCadastro formCadastro = new FormCadastro();
+            formCadastro.ShowDialog();
+
         }
     }
 }
