@@ -21,5 +21,10 @@ namespace BoxHouse
         {
 
         }
+
+        private void btFinalizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
