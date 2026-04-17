@@ -31,13 +31,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvInfo = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btCadatrar = new System.Windows.Forms.Button();
+            this.txtNomePet = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNomePet = new System.Windows.Forms.TextBox();
+            this.btCadatrar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -76,14 +76,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preencher informações";
             // 
-            // btCadatrar
+            // txtNomePet
             // 
-            this.btCadatrar.Location = new System.Drawing.Point(351, 373);
-            this.btCadatrar.Name = "btCadatrar";
-            this.btCadatrar.Size = new System.Drawing.Size(69, 23);
-            this.btCadatrar.TabIndex = 5;
-            this.btCadatrar.Text = "Cadastrar";
-            this.btCadatrar.UseVisualStyleBackColor = true;
+            this.txtNomePet.Location = new System.Drawing.Point(93, 84);
+            this.txtNomePet.Name = "txtNomePet";
+            this.txtNomePet.Size = new System.Drawing.Size(232, 20);
+            this.txtNomePet.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 15);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Nome do pet:";
+            // 
+            // mtbTelefone
+            // 
+            this.mtbTelefone.Location = new System.Drawing.Point(93, 55);
+            this.mtbTelefone.Mask = "(99) 00000-0000";
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(89, 20);
+            this.mtbTelefone.TabIndex = 7;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(93, 28);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(232, 20);
+            this.txtNome.TabIndex = 6;
             // 
             // label2
             // 
@@ -105,39 +128,15 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Nome:";
             // 
-            // txtNome
+            // btCadatrar
             // 
-            this.txtNome.Location = new System.Drawing.Point(93, 28);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(232, 20);
-            this.txtNome.TabIndex = 6;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
-            // 
-            // mtbTelefone
-            // 
-            this.mtbTelefone.Location = new System.Drawing.Point(93, 55);
-            this.mtbTelefone.Mask = "(99) 00000-0000";
-            this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(89, 20);
-            this.mtbTelefone.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 15);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Nome do pet:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtNomePet
-            // 
-            this.txtNomePet.Location = new System.Drawing.Point(93, 84);
-            this.txtNomePet.Name = "txtNomePet";
-            this.txtNomePet.Size = new System.Drawing.Size(232, 20);
-            this.txtNomePet.TabIndex = 9;
+            this.btCadatrar.Location = new System.Drawing.Point(351, 373);
+            this.btCadatrar.Name = "btCadatrar";
+            this.btCadatrar.Size = new System.Drawing.Size(69, 23);
+            this.btCadatrar.TabIndex = 5;
+            this.btCadatrar.Text = "Cadastrar";
+            this.btCadatrar.UseVisualStyleBackColor = true;
+            this.btCadatrar.Click += new System.EventHandler(this.btCadatrar_Click);
             // 
             // FormCadastro
             // 
@@ -149,7 +148,6 @@
             this.Controls.Add(this.btCadatrar);
             this.Name = "FormCadastro";
             this.Text = "Cadastro";
-            this.Load += new System.EventHandler(this.FromCadastro_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).EndInit();
             this.groupBox1.ResumeLayout(false);

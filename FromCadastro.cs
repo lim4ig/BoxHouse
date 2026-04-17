@@ -15,26 +15,23 @@ namespace BoxHouse
         public FormCadastro()
         {
             InitializeComponent();
+
+            dgvInfo .Columns.Add("Nome", "Nome do Cliente");
+            dgvInfo.Columns.Add("Telefone", "Telefone");
+            dgvInfo.Columns.Add("Nome_do_pet", "Nome do Pet");
         }
 
-        private void FromCadastro_Load(object sender, EventArgs e)
+        private void btCadatrar_Click(object sender, EventArgs e)
         {
+            string nome = txtNome.Text;
+            string telefone = mtbTelefone.Text;
+            string nomePet = txtNomePet.Text;
+
+            dgvInfo.Rows.Add(nome, telefone, nomePet);
+
+            btCadatrar.Enabled = false;
 
         }
 
-        private void btFinalizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

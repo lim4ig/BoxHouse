@@ -12,12 +12,15 @@ namespace BoxHouse
 {
     public partial class FormNovaVenda : Form
     {
-        private object formDetalhes;
+        
+
 
         public FormNovaVenda()
         {
-            InitializeComponent();
+            
 
+            InitializeComponent();
+            
             List<Produto> listaProdutos = new List<Produto>
             {
                 new Produto("Mordedor", 29.99m),
@@ -82,7 +85,8 @@ namespace BoxHouse
         {
             ndQuantidade.Minimum = 1;
         }
-
+         
 
     }
+    
 }
