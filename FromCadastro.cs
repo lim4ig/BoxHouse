@@ -26,5 +26,15 @@ namespace BoxHouse
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btFinalizar = new System.Windows.Forms.Button();
-            this.btCadatro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ndQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemAdd)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -96,7 +95,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btCadatro);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btAdicionar);
@@ -149,16 +147,6 @@
             this.btFinalizar.UseVisualStyleBackColor = true;
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
-            // btCadatro
-            // 
-            this.btCadatro.Location = new System.Drawing.Point(256, 105);
-            this.btCadatro.Name = "btCadatro";
-            this.btCadatro.Size = new System.Drawing.Size(69, 23);
-            this.btCadatro.TabIndex = 5;
-            this.btCadatro.Text = "Cadastro";
-            this.btCadatro.UseVisualStyleBackColor = true;
-            this.btCadatro.Click += new System.EventHandler(this.btCadatro_Click);
-            // 
             // FormNovaVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,7 +181,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btFinalizar;
-        private System.Windows.Forms.Button btCadatro;
     }
 }
 

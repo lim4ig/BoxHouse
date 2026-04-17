@@ -83,13 +83,6 @@ namespace BoxHouse
             ndQuantidade.Minimum = 1;
         }
 
-        private void btCadatro_Click(object sender, EventArgs e)
-        {
-            FormCadastro formCadastro = new FormCadastro();
-            formCadastro.ShowDialog();
-            InitializeComponent();
 
-
-        }
     }
 }
