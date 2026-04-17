@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoxHouse
 {
-    public partial class FromCadastro : Form
+    public partial class FormCadastro : Form
     {
-        public FromCadastro()
+        public FormCadastro()
         {
             InitializeComponent();
         }

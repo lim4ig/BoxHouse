@@ -12,6 +12,8 @@ namespace BoxHouse
 {
     public partial class FormNovaVenda : Form
     {
+        private object formDetalhes;
+
         public FormNovaVenda()
         {
             InitializeComponent();
@@ -85,6 +87,8 @@ namespace BoxHouse
         {
             FormCadastro formCadastro = new FormCadastro();
             formCadastro.ShowDialog();
+            InitializeComponent();
+
 
         }
     }

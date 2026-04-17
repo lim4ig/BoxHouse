@@ -7,12 +7,13 @@ namespace BoxHouse
     {
         public FormCadastro()
         {
-            InitializeComponent(); // gerado pelo designer
+            InitializeComponent(); 
         }
+        
 
         private void InitializeComponent()
         {
-            throw new NotImplementedException();
+
         }
     }
 }
