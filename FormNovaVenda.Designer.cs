@@ -80,6 +80,7 @@
             this.dgvItemAdd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItemAdd.Location = new System.Drawing.Point(6, 19);
             this.dgvItemAdd.Name = "dgvItemAdd";
+            this.dgvItemAdd.ReadOnly = true;
             this.dgvItemAdd.Size = new System.Drawing.Size(394, 177);
             this.dgvItemAdd.TabIndex = 3;
             // 

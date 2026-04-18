@@ -16,7 +16,7 @@ namespace BoxHouse
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormNovaVenda());
+            //Application.Run(new FormNovaVenda());
             Application.Run(new FormCadastro());
 
         }
