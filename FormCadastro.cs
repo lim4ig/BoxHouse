@@ -90,5 +90,12 @@ namespace BoxHouse
         {
             fnFiltrarTabela();
         }
+
+        private void btFechar_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }

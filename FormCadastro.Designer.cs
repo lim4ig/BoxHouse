@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.btBuscar = new System.Windows.Forms.Button();
+            this.btFechar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -69,6 +70,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btFechar);
             this.groupBox1.Controls.Add(this.btLimpar);
             this.groupBox1.Controls.Add(this.txtNomePet);
             this.groupBox1.Controls.Add(this.btCadatrar);
@@ -193,6 +195,16 @@
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
+            // btFechar
+            // 
+            this.btFechar.Location = new System.Drawing.Point(6, 105);
+            this.btFechar.Name = "btFechar";
+            this.btFechar.Size = new System.Drawing.Size(69, 23);
+            this.btFechar.TabIndex = 14;
+            this.btFechar.Text = "Fechar";
+            this.btFechar.UseVisualStyleBackColor = true;
+            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
+            // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,5 +243,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.Button btFechar;
     }
 }

@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btFinalizar = new System.Windows.Forms.Button();
+            this.btFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ndQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemAdd)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -96,6 +97,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btFechar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btAdicionar);
@@ -148,6 +150,16 @@
             this.btFinalizar.UseVisualStyleBackColor = true;
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
+            // btFechar
+            // 
+            this.btFechar.Location = new System.Drawing.Point(9, 105);
+            this.btFechar.Name = "btFechar";
+            this.btFechar.Size = new System.Drawing.Size(69, 23);
+            this.btFechar.TabIndex = 5;
+            this.btFechar.Text = "Fechar";
+            this.btFechar.UseVisualStyleBackColor = true;
+            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
+            // 
             // FormNovaVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +194,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btFinalizar;
+        private System.Windows.Forms.Button btFechar;
     }
 }
 
