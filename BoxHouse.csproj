@@ -62,6 +62,7 @@
     <Compile Include="FormNovaVenda.Designer.cs">
       <DependentUpon>FormNovaVenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionarios.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
