@@ -30,5 +30,12 @@ namespace BoxHouse
             formNovaVenda.Show();
             this.Hide();
         }
+
+        private void btFuncionarios_Click(object sender, EventArgs e)
+        {
+            FormCadastroFuncionarios formCadastroFuncionarios = new FormCadastroFuncionarios();
+            formCadastroFuncionarios.Show();
+            this.Hide();
+        }
     }
 }

@@ -12,18 +12,16 @@ namespace BoxHouse
 {
     public partial class FormCadastro : Form
     {
-        private DataTable dtClientes;
+        // Lista simples de clientes (maneira iniciante)
+        private List<Cliente> clientes;
 
         public FormCadastro()
         {
             InitializeComponent();
-            // Dados para o DataView
-            dtClientes = new DataTable();
-            dtClientes.Columns.Add("Nome", typeof(string));
-            dtClientes.Columns.Add("Telefone", typeof(string));
-            dtClientes.Columns.Add("Nome_do_pet", typeof(string));
-
-            dgvInfo.DataSource = dtClientes;
+            // Inicializa a lista e configura o DataGridView (maneira iniciante)
+            clientes = new List<Cliente>();
+            dgvInfo.DataSource = null;
+            dgvInfo.DataSource = clientes;
         }
 
         private void btCadatrar_Click(object sender, EventArgs e)
@@ -32,11 +30,18 @@ namespace BoxHouse
             string telefone = mtbTelefone.Text.Trim();
             string nomePet = txtNomePet.Text.Trim();
 
-            // Verifica se ja tem o cliente cadastrado com os dados iguais :)
-            bool existe = dtClientes.Rows.Cast<DataRow>()
-                .Any(r => string.Equals((r["Nome"] as string)?.Trim(), nome, StringComparison.OrdinalIgnoreCase)
-                       && string.Equals((r["Telefone"] as string)?.Trim(), telefone, StringComparison.OrdinalIgnoreCase)
-                       && string.Equals((r["Nome_do_pet"] as string)?.Trim(), nomePet, StringComparison.OrdinalIgnoreCase));
+            // Verifica se já tem o cliente cadastrado com os mesmos dados (maneira simples)
+            bool existe = false;
+            foreach (var c in clientes)
+            {
+                if (string.Equals(c.Nome?.Trim(), nome, StringComparison.OrdinalIgnoreCase)
+                    && string.Equals(c.Telefone?.Trim(), telefone, StringComparison.OrdinalIgnoreCase)
+                    && string.Equals(c.Nome_do_pet?.Trim(), nomePet, StringComparison.OrdinalIgnoreCase))
+                {
+                    existe = true;
+                    break;
+                }
+            }
 
             if (existe)
             {
@@ -44,8 +49,10 @@ namespace BoxHouse
                 return;
             }
 
-            dtClientes.Rows.Add(nome, telefone, nomePet);
-
+            // Adiciona um novo Cliente e atualiza o DataGridView
+            clientes.Add(new Cliente { Nome = nome, Telefone = telefone, Nome_do_pet = nomePet });
+            dgvInfo.DataSource = null;
+            dgvInfo.DataSource = clientes;
         }
 
         private void fnLimparFormularios()
@@ -58,8 +65,10 @@ namespace BoxHouse
 
         private void fnLimparTabelaCadatro()
         {
-            dtClientes.Clear();
-
+            // Limpa a lista de clientes e atualiza o DataGridView
+            clientes.Clear();
+            dgvInfo.DataSource = null;
+            dgvInfo.DataSource = clientes;
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
@@ -75,15 +84,22 @@ namespace BoxHouse
 
         private void fnFiltrarTabela()
         {
-            var filtro = txtFiltro.Text.Trim().Replace("'", "''");
+            var filtro = txtFiltro.Text.Trim();
             if (string.IsNullOrEmpty(filtro))
             {
-                dtClientes.DefaultView.RowFilter = string.Empty;
+                // Restaura a lista completa
+                dgvInfo.DataSource = null;
+                dgvInfo.DataSource = clientes;
                 return;
             }
 
-            // Filtra pela coluna do nome
-            dtClientes.DefaultView.RowFilter = string.Format("[Nome] LIKE '%{0}%'",filtro);
+            // Filtra pelo nome
+            var filtrados = clientes.Where(c => !string.IsNullOrEmpty(c.Nome) &&
+                                               c.Nome.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0)
+                                   .ToList();
+
+            dgvInfo.DataSource = null;
+            dgvInfo.DataSource = filtrados;
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
@@ -95,7 +111,12 @@ namespace BoxHouse
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             telaPrincipal.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void FormCadastro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

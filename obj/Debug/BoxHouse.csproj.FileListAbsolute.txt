@@ -10,3 +10,4 @@ C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.exe
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.pdb
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.FormCadastro.resources
 C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.TelaPrincipal.resources
+C:\Users\igor.lmatheus\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.FormCadastroFuncionarios.resources

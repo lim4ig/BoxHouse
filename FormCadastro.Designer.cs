@@ -31,6 +31,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvInfo = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btFechar = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.txtNomePet = new System.Windows.Forms.TextBox();
             this.btCadatrar = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.btBuscar = new System.Windows.Forms.Button();
-            this.btFechar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -85,6 +85,16 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preencher informações";
+            // 
+            // btFechar
+            // 
+            this.btFechar.Location = new System.Drawing.Point(6, 105);
+            this.btFechar.Name = "btFechar";
+            this.btFechar.Size = new System.Drawing.Size(69, 23);
+            this.btFechar.TabIndex = 14;
+            this.btFechar.Text = "Fechar";
+            this.btFechar.UseVisualStyleBackColor = true;
+            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
             // btLimpar
             // 
@@ -195,16 +205,6 @@
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
-            // btFechar
-            // 
-            this.btFechar.Location = new System.Drawing.Point(6, 105);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 14;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
-            // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +218,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormCadastro";
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.FormCadastro_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).EndInit();
             this.groupBox1.ResumeLayout(false);

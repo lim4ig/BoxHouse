@@ -90,7 +90,7 @@ namespace BoxHouse
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             telaPrincipal.Show();
-            this.Close();
+            this.Hide();
         }
     }
     

@@ -34,11 +34,11 @@
             this.dgvItemAdd = new System.Windows.Forms.DataGridView();
             this.lbValorTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btFechar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btFinalizar = new System.Windows.Forms.Button();
-            this.btFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ndQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemAdd)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -110,6 +110,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleção de Produto";
             // 
+            // btFechar
+            // 
+            this.btFechar.Location = new System.Drawing.Point(9, 105);
+            this.btFechar.Name = "btFechar";
+            this.btFechar.Size = new System.Drawing.Size(69, 23);
+            this.btFechar.TabIndex = 5;
+            this.btFechar.Text = "Fechar";
+            this.btFechar.UseVisualStyleBackColor = true;
+            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -149,16 +159,6 @@
             this.btFinalizar.Text = "Finalizar";
             this.btFinalizar.UseVisualStyleBackColor = true;
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
-            // 
-            // btFechar
-            // 
-            this.btFechar.Location = new System.Drawing.Point(9, 105);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 5;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
             // FormNovaVenda
             // 

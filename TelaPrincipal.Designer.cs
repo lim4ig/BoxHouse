@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btTelaCadastro = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btFuncionarios = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btNovaVenda = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,14 +44,15 @@
             this.btTelaCadastro.UseVisualStyleBackColor = true;
             this.btTelaCadastro.Click += new System.EventHandler(this.btTelaCadastro_Click);
             // 
-            // button2
+            // btFuncionarios
             // 
-            this.button2.Location = new System.Drawing.Point(12, 134);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(289, 116);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btFuncionarios.Location = new System.Drawing.Point(12, 134);
+            this.btFuncionarios.Name = "btFuncionarios";
+            this.btFuncionarios.Size = new System.Drawing.Size(289, 116);
+            this.btFuncionarios.TabIndex = 1;
+            this.btFuncionarios.Text = "Funcionarios";
+            this.btFuncionarios.UseVisualStyleBackColor = true;
+            this.btFuncionarios.Click += new System.EventHandler(this.btFuncionarios_Click);
             // 
             // button3
             // 
@@ -79,7 +80,7 @@
             this.ClientSize = new System.Drawing.Size(606, 261);
             this.Controls.Add(this.btNovaVenda);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btFuncionarios);
             this.Controls.Add(this.btTelaCadastro);
             this.Name = "TelaPrincipal";
             this.Text = "TelaPrincipal";
@@ -90,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.Button btTelaCadastro;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btFuncionarios;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btNovaVenda;
     }

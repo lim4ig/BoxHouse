@@ -56,6 +56,12 @@
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs" />
+    <Compile Include="FormCadastroFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroFuncionarios.Designer.cs">
+      <DependentUpon>FormCadastroFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNovaVenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroFuncionarios.resx">
+      <DependentUpon>FormCadastroFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNovaVenda.resx">
       <DependentUpon>FormNovaVenda.cs</DependentUpon>
