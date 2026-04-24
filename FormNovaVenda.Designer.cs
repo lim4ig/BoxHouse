@@ -34,7 +34,6 @@
             this.dgvItemAdd = new System.Windows.Forms.DataGridView();
             this.lbValorTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btFechar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -47,7 +46,6 @@
             // 
             // cbProdutos
             // 
-            this.cbProdutos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cbProdutos.FormattingEnabled = true;
             this.cbProdutos.Location = new System.Drawing.Point(101, 29);
             this.cbProdutos.Name = "cbProdutos";
@@ -98,7 +96,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btFechar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btAdicionar);
@@ -110,16 +107,6 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleção de Produto";
-            // 
-            // btFechar
-            // 
-            this.btFechar.Location = new System.Drawing.Point(9, 105);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 5;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
             // label2
             // 
@@ -195,7 +182,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btFinalizar;
-        private System.Windows.Forms.Button btFechar;
     }
 }
 

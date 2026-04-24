@@ -29,27 +29,30 @@
         private void InitializeComponent()
         {
             this.Entregas = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbClientes = new System.Windows.Forms.ComboBox();
             this.btLimpar = new System.Windows.Forms.Button();
-            this.cbCargo = new System.Windows.Forms.ComboBox();
-            this.txtComissão = new System.Windows.Forms.TextBox();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btFechar = new System.Windows.Forms.Button();
-            this.btCdFuncionario = new System.Windows.Forms.Button();
+            this.btCdEntrega = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvStatus = new System.Windows.Forms.DataGridView();
+            this.btAtualizar = new System.Windows.Forms.Button();
             this.Entregas.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // Entregas
             // 
-            this.Entregas.Controls.Add(this.comboBox1);
+            this.Entregas.Controls.Add(this.cbClientes);
             this.Entregas.Controls.Add(this.btLimpar);
-            this.Entregas.Controls.Add(this.cbCargo);
-            this.Entregas.Controls.Add(this.txtComissão);
+            this.Entregas.Controls.Add(this.cbStatus);
+            this.Entregas.Controls.Add(this.txtEndereco);
             this.Entregas.Controls.Add(this.label4);
-            this.Entregas.Controls.Add(this.btFechar);
-            this.Entregas.Controls.Add(this.btCdFuncionario);
+            this.Entregas.Controls.Add(this.btCdEntrega);
             this.Entregas.Controls.Add(this.label3);
             this.Entregas.Controls.Add(this.label1);
             this.Entregas.Location = new System.Drawing.Point(12, 12);
@@ -59,19 +62,19 @@
             this.Entregas.TabStop = false;
             this.Entregas.Text = "Cadastro";
             // 
-            // comboBox1
+            // cbClientes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbClientes.FormattingEnabled = true;
+            this.cbClientes.Items.AddRange(new object[] {
             "Igor",
             "Paulo",
             "Guto",
             "Henderson",
             "Erica"});
-            this.comboBox1.Location = new System.Drawing.Point(70, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(275, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cbClientes.Location = new System.Drawing.Point(70, 17);
+            this.cbClientes.Name = "cbClientes";
+            this.cbClientes.Size = new System.Drawing.Size(275, 21);
+            this.cbClientes.TabIndex = 12;
             // 
             // btLimpar
             // 
@@ -82,25 +85,25 @@
             this.btLimpar.Text = "Limpar";
             this.btLimpar.UseVisualStyleBackColor = true;
             // 
-            // cbCargo
+            // cbStatus
             // 
-            this.cbCargo.AllowDrop = true;
-            this.cbCargo.FormattingEnabled = true;
-            this.cbCargo.Items.AddRange(new object[] {
+            this.cbStatus.AllowDrop = true;
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Items.AddRange(new object[] {
             "Pendente ",
             "Atrasado",
             "Entregue"});
-            this.cbCargo.Location = new System.Drawing.Point(70, 73);
-            this.cbCargo.Name = "cbCargo";
-            this.cbCargo.Size = new System.Drawing.Size(275, 21);
-            this.cbCargo.TabIndex = 10;
+            this.cbStatus.Location = new System.Drawing.Point(70, 73);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(275, 21);
+            this.cbStatus.TabIndex = 10;
             // 
-            // txtComissão
+            // txtEndereco
             // 
-            this.txtComissão.Location = new System.Drawing.Point(70, 46);
-            this.txtComissão.Name = "txtComissão";
-            this.txtComissão.Size = new System.Drawing.Size(275, 20);
-            this.txtComissão.TabIndex = 9;
+            this.txtEndereco.Location = new System.Drawing.Point(70, 46);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(275, 20);
+            this.txtEndereco.TabIndex = 9;
             // 
             // label4
             // 
@@ -111,23 +114,15 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Endereço:";
             // 
-            // btFechar
+            // btCdEntrega
             // 
-            this.btFechar.Location = new System.Drawing.Point(9, 101);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 7;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            // 
-            // btCdFuncionario
-            // 
-            this.btCdFuncionario.Location = new System.Drawing.Point(331, 101);
-            this.btCdFuncionario.Name = "btCdFuncionario";
-            this.btCdFuncionario.Size = new System.Drawing.Size(69, 23);
-            this.btCdFuncionario.TabIndex = 6;
-            this.btCdFuncionario.Text = "Cadastrar";
-            this.btCdFuncionario.UseVisualStyleBackColor = true;
+            this.btCdEntrega.Location = new System.Drawing.Point(331, 101);
+            this.btCdEntrega.Name = "btCdEntrega";
+            this.btCdEntrega.Size = new System.Drawing.Size(69, 23);
+            this.btCdEntrega.TabIndex = 6;
+            this.btCdEntrega.Text = "Cadastrar";
+            this.btCdEntrega.UseVisualStyleBackColor = true;
+            this.btCdEntrega.Click += new System.EventHandler(this.btCdEntrega_Click);
             // 
             // label3
             // 
@@ -147,16 +142,49 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvStatus);
+            this.groupBox2.Location = new System.Drawing.Point(12, 161);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(408, 202);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Dados da entrega";
+            // 
+            // dgvStatus
+            // 
+            this.dgvStatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStatus.Location = new System.Drawing.Point(6, 19);
+            this.dgvStatus.Name = "dgvStatus";
+            this.dgvStatus.ReadOnly = true;
+            this.dgvStatus.Size = new System.Drawing.Size(394, 177);
+            this.dgvStatus.TabIndex = 3;
+            // 
+            // btAtualizar
+            // 
+            this.btAtualizar.Location = new System.Drawing.Point(343, 363);
+            this.btAtualizar.Name = "btAtualizar";
+            this.btAtualizar.Size = new System.Drawing.Size(69, 23);
+            this.btAtualizar.TabIndex = 13;
+            this.btAtualizar.Text = "Atualizar";
+            this.btAtualizar.UseVisualStyleBackColor = true;
+            this.btAtualizar.Click += new System.EventHandler(this.btAtualizar_Click);
+            // 
             // FormEntregas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 453);
+            this.Controls.Add(this.btAtualizar);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Entregas);
             this.Name = "FormEntregas";
             this.Text = "FormEntregas";
             this.Entregas.ResumeLayout(false);
             this.Entregas.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatus)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,13 +193,15 @@
 
         private System.Windows.Forms.GroupBox Entregas;
         private System.Windows.Forms.Button btLimpar;
-        private System.Windows.Forms.ComboBox cbCargo;
-        private System.Windows.Forms.TextBox txtComissão;
+        private System.Windows.Forms.ComboBox cbStatus;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btFechar;
-        private System.Windows.Forms.Button btCdFuncionario;
+        private System.Windows.Forms.Button btCdEntrega;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbClientes;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvStatus;
+        private System.Windows.Forms.Button btAtualizar;
     }
 }

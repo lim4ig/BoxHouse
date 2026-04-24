@@ -21,7 +21,7 @@ namespace BoxHouse
 
             InitializeComponent();
             
-            List<Produto> listaProdutos = new List<Produto>
+            BindingList<Produto> listaProdutos = new BindingList<Produto>
             {
                 new Produto("Mordedor", 29.99m),
                 new Produto("Ração", 79.99m),
@@ -86,12 +86,6 @@ namespace BoxHouse
             ndQuantidade.Minimum = 1;
         }
 
-        private void btFechar_Click(object sender, EventArgs e)
-        {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            telaPrincipal.Show();
-            this.Hide();
-        }
     }
     
 }

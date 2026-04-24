@@ -35,14 +35,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvDados = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.btLimpar = new System.Windows.Forms.Button();
             this.cbCargo = new System.Windows.Forms.ComboBox();
             this.txtComissão = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btFechar = new System.Windows.Forms.Button();
             this.btCdFuncionario = new System.Windows.Forms.Button();
             this.btLimparDGV = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ndIdade)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
@@ -115,7 +114,6 @@
             this.groupBox1.Controls.Add(this.cbCargo);
             this.groupBox1.Controls.Add(this.txtComissão);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.btFechar);
             this.groupBox1.Controls.Add(this.btCdFuncionario);
             this.groupBox1.Controls.Add(this.ndIdade);
             this.groupBox1.Controls.Add(this.label3);
@@ -127,6 +125,13 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(70, 17);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(275, 20);
+            this.txtNome.TabIndex = 12;
             // 
             // btLimpar
             // 
@@ -167,16 +172,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Comissão:";
             // 
-            // btFechar
-            // 
-            this.btFechar.Location = new System.Drawing.Point(9, 151);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 7;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
-            // 
             // btCdFuncionario
             // 
             this.btCdFuncionario.Location = new System.Drawing.Point(331, 151);
@@ -196,13 +191,6 @@
             this.btLimparDGV.Text = "Limpar";
             this.btLimparDGV.UseVisualStyleBackColor = true;
             this.btLimparDGV.Click += new System.EventHandler(this.btLimparDGV_Click);
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(70, 17);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(275, 20);
-            this.txtNome.TabIndex = 12;
             // 
             // FormCadastroFuncionarios
             // 
@@ -233,7 +221,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvDados;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btFechar;
         private System.Windows.Forms.Button btCdFuncionario;
         private System.Windows.Forms.TextBox txtComissão;
         private System.Windows.Forms.Label label4;

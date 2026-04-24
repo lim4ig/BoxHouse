@@ -30,7 +30,7 @@
         {
             this.btTelaCadastro = new System.Windows.Forms.Button();
             this.btFuncionarios = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btEntregas = new System.Windows.Forms.Button();
             this.btNovaVenda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,14 +54,15 @@
             this.btFuncionarios.UseVisualStyleBackColor = true;
             this.btFuncionarios.Click += new System.EventHandler(this.btFuncionarios_Click);
             // 
-            // button3
+            // btEntregas
             // 
-            this.button3.Location = new System.Drawing.Point(307, 134);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(289, 116);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btEntregas.Location = new System.Drawing.Point(307, 134);
+            this.btEntregas.Name = "btEntregas";
+            this.btEntregas.Size = new System.Drawing.Size(289, 116);
+            this.btEntregas.TabIndex = 2;
+            this.btEntregas.Text = "Entregas";
+            this.btEntregas.UseVisualStyleBackColor = true;
+            this.btEntregas.Click += new System.EventHandler(this.btEntregas_Click);
             // 
             // btNovaVenda
             // 
@@ -79,7 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 261);
             this.Controls.Add(this.btNovaVenda);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btEntregas);
             this.Controls.Add(this.btFuncionarios);
             this.Controls.Add(this.btTelaCadastro);
             this.Name = "TelaPrincipal";
@@ -92,7 +93,7 @@
 
         private System.Windows.Forms.Button btTelaCadastro;
         private System.Windows.Forms.Button btFuncionarios;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btEntregas;
         private System.Windows.Forms.Button btNovaVenda;
     }
 }

@@ -31,7 +31,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvInfo = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btFechar = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.txtNomePet = new System.Windows.Forms.TextBox();
             this.btCadatrar = new System.Windows.Forms.Button();
@@ -61,6 +60,8 @@
             // 
             // dgvInfo
             // 
+            this.dgvInfo.AllowUserToAddRows = false;
+            this.dgvInfo.AllowUserToDeleteRows = false;
             this.dgvInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfo.Location = new System.Drawing.Point(6, 19);
             this.dgvInfo.Name = "dgvInfo";
@@ -70,7 +71,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btFechar);
             this.groupBox1.Controls.Add(this.btLimpar);
             this.groupBox1.Controls.Add(this.txtNomePet);
             this.groupBox1.Controls.Add(this.btCadatrar);
@@ -85,16 +85,6 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Preencher informações";
-            // 
-            // btFechar
-            // 
-            this.btFechar.Location = new System.Drawing.Point(6, 105);
-            this.btFechar.Name = "btFechar";
-            this.btFechar.Size = new System.Drawing.Size(69, 23);
-            this.btFechar.TabIndex = 14;
-            this.btFechar.Text = "Fechar";
-            this.btFechar.UseVisualStyleBackColor = true;
-            this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
             // btLimpar
             // 
@@ -244,6 +234,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.Button btBuscar;
-        private System.Windows.Forms.Button btFechar;
     }
 }

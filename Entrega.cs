@@ -11,5 +11,12 @@ namespace BoxHouse
         public string Endereco { get; set; }
         public string Cliente { get; set; }
         public string Status { get; set; }
+    
+    public Entrega(string endereco, string cliente, string status)
+        {
+            Endereco = endereco;
+            Cliente = cliente;
+            Status = status;
+        }
     }
 }

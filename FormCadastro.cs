@@ -13,13 +13,13 @@ namespace BoxHouse
     public partial class FormCadastro : Form
     {
         // Lista simples de clientes (maneira iniciante)
-        private List<Cliente> clientes;
+        private BindingList<Cliente> clientes;
 
         public FormCadastro()
         {
             InitializeComponent();
             // Inicializa a lista e configura o DataGridView (maneira iniciante)
-            clientes = new List<Cliente>();
+            clientes = new BindingList<Cliente>();
             dgvInfo.DataSource = null;
             dgvInfo.DataSource = clientes;
         }
@@ -105,13 +105,6 @@ namespace BoxHouse
         private void btBuscar_Click(object sender, EventArgs e)
         {
             fnFiltrarTabela();
-        }
-
-        private void btFechar_Click(object sender, EventArgs e)
-        {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            telaPrincipal.Show();
-            this.Hide();
         }
 
         private void FormCadastro_Load(object sender, EventArgs e)

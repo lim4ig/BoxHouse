@@ -104,13 +104,6 @@ namespace BoxHouse
             dgvDados.Rows.Add(funcionarios.nome, funcionarios.idade, funcionarios.cargo, comissaoCalculada.ToString("C2"));
         }
 
-        private void btFechar_Click(object sender, EventArgs e)
-        {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            telaPrincipal.Show();
-            this.Hide();
-
-        }
 
         private void fnLimparCampos()
         {

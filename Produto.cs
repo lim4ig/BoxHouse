@@ -17,5 +17,10 @@ namespace BoxHouse
             Nome = nome;
             Preco = preco;
         }
+
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }

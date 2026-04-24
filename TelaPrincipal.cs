@@ -21,21 +21,24 @@ namespace BoxHouse
         {
             FormCadastro formCadastro = new FormCadastro();
             formCadastro.Show();
-            this.Hide();
         }
 
         private void btNovaVenda_Click(object sender, EventArgs e)
         {
             FormNovaVenda formNovaVenda = new FormNovaVenda();
             formNovaVenda.Show();
-            this.Hide();
         }
 
         private void btFuncionarios_Click(object sender, EventArgs e)
         {
             FormCadastroFuncionarios formCadastroFuncionarios = new FormCadastroFuncionarios();
             formCadastroFuncionarios.Show();
-            this.Hide();
+        }
+
+        private void btEntregas_Click(object sender, EventArgs e)
+        {
+            FormEntregas formEntregas = new FormEntregas();
+            formEntregas.Show();
         }
     }
 }
