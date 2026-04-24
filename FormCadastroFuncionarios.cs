@@ -12,7 +12,6 @@ namespace BoxHouse
 {
     public partial class FormCadastroFuncionarios : Form
     {
-        // Lista para armazenar objetos Funcionarios
         private List<Funcionarios> funcionariosList;
 
         public FormCadastroFuncionarios()
@@ -93,7 +92,6 @@ namespace BoxHouse
                 comissaoCalculada = vendasValue * 0.05;
             }
 
-            // Cria o objeto Funcionarios e armazena na lista
             Funcionarios funcionarios = new Funcionarios
             {
                 nome = nome,

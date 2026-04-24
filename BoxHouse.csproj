@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entrega.cs" />
     <Compile Include="FormCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +62,12 @@
     </Compile>
     <Compile Include="FormCadastroFuncionarios.Designer.cs">
       <DependentUpon>FormCadastroFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntregas.Designer.cs">
+      <DependentUpon>FormEntregas.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNovaVenda.cs">
       <SubType>Form</SubType>
@@ -83,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroFuncionarios.resx">
       <DependentUpon>FormCadastroFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntregas.resx">
+      <DependentUpon>FormEntregas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNovaVenda.resx">
       <DependentUpon>FormNovaVenda.cs</DependentUpon>

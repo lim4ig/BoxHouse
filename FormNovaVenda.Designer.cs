@@ -47,6 +47,7 @@
             // 
             // cbProdutos
             // 
+            this.cbProdutos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cbProdutos.FormattingEnabled = true;
             this.cbProdutos.Location = new System.Drawing.Point(101, 29);
             this.cbProdutos.Name = "cbProdutos";

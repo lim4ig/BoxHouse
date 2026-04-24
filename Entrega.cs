@@ -8,5 +8,8 @@ namespace BoxHouse
 {
     internal class Entrega
     {
+        public string Endereco { get; set; }
+        public string Cliente { get; set; }
+        public string Status { get; set; }
     }
 }
